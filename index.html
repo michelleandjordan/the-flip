@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Flip · Jordan A. Cook</title>
+<meta name="description" content="The Flip, a flag painted by Jordan A. Cook with ash and charcoal from the fire that burned her gallery. The first painting of the American Heritage Project, released for the nation's 250th on July 4, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Flip · Jordan A. Cook">
+<meta property="og:description" content="A flag painted with ash and charcoal from the fire that burned her gallery. The first painting of the American Heritage Project.">
+<meta property="og:image" content="https://www.michelleandjordancook.com/wp-content/uploads/2025/10/The-Flip-painting-by-Jordan-A-Cook-arukahpiano-com.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+html, body { margin: 0; padding: 0; background: #ffffff; }
+body { font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; color: #111111; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.flip-page {
+    --flip-red: #b80000;
+    --flip-red-hover: #a10000;
+    --flip-red-active: #960202;
+    --flip-dark: #111111;
+    --flip-ink: #002659;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 6rem 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.flip-page * { box-sizing: border-box; }
+
+.flip-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    line-height: 1.7;
+    color: var(--flip-red);
+    margin: 0 0 1.25rem 0;
+    text-wrap: balance;
+}
+
+.flip-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--flip-dark);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-wrap: balance;
+}
+
+.flip-meta {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--flip-dark);
+    margin: 0 0 2rem 0;
+    text-wrap: balance;
+}
+
+.flip-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem auto;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.12);
+}
+
+.flip-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.4rem 2.5rem;
+    max-width: 660px;
+    margin: 0 auto 2rem auto;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.flip-detail-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #777;
+    margin: 0 0 0.35rem 0;
+}
+.flip-detail-value {
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: var(--flip-dark);
+    margin: 0;
+    text-wrap: balance;
+}
+
+.flip-story {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0 auto 1.5rem auto;
+    max-width: 620px;
+    text-wrap: pretty;
+}
+
+.flip-line {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--flip-dark);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    max-width: 560px;
+    margin: 0 auto 1.5rem auto;
+    text-wrap: balance;
+}
+
+.flip-section-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--flip-red);
+    margin: 3.5rem auto 0.75rem auto;
+    text-wrap: balance;
+}
+.flip-section-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--flip-dark);
+    max-width: 620px;
+    margin: 0 auto 1.5rem auto;
+    text-wrap: balance;
+}
+
+.flip-orientation {
+    max-width: 560px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto 0.75rem auto;
+    box-shadow: 0 0.375rem 1.5rem rgba(0, 0, 0, 0.14);
+}
+.flip-caption {
+    font-size: 0.85rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #666;
+    margin: 0 auto 1rem auto;
+    max-width: 460px;
+    text-wrap: balance;
+}
+
+.flip-video {
+    position: relative;
+    width: 100%;
+    max-width: 620px;
+    margin: 2rem auto 0.6rem auto;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    box-shadow: 0 0.375rem 1.5rem rgba(0, 0, 0, 0.18);
+}
+.flip-video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.flip-video-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #888;
+    margin: 0 0 2.5rem 0;
+    text-wrap: balance;
+}
+
+/* Offer + Acquire */
+.flip-offer {
+    border-top: 2px solid rgba(184, 0, 0, 0.25);
+    max-width: 560px;
+    margin: 4.5rem auto 0 auto;
+    padding-top: 2.5rem;
+}
+.flip-framed {
+    max-width: 460px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto 0.75rem auto;
+    box-shadow: 0 0.375rem 1.5rem rgba(0, 0, 0, 0.14);
+}
+.flip-framed-caption {
+    font-size: 0.85rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    color: #666;
+    margin: 0 0 1rem 0;
+    text-wrap: balance;
+}
+.flip-price {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: var(--flip-dark);
+    margin: 1.5rem 0 0.25rem 0;
+}
+.flip-avail {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    line-height: 1.7;
+    color: #888;
+    margin: 0 0 1.75rem 0;
+    text-wrap: balance;
+}
+.flip-cta {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #ffffff;
+    background: var(--flip-red);
+    text-decoration: none;
+    padding: 1rem 2.75rem;
+    border-radius: 2px;
+    transition: background 0.25s ease, transform 0.12s ease;
+}
+.flip-cta:hover, .flip-cta:focus { background: var(--flip-red-hover); color: #fff; }
+.flip-cta:active { background: var(--flip-red-active); transform: translateY(1px); }
+
+/* About accordion */
+.flip-accordion {
+    max-width: 620px;
+    margin: 4rem auto 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.flip-accordion > summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.4rem 0.25rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--flip-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flip-accordion > summary::-webkit-details-marker { display: none; }
+.flip-accordion > summary::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right: 2px solid var(--flip-red);
+    border-bottom: 2px solid var(--flip-red);
+    transform: rotate(45deg);
+    transition: transform 0.25s ease;
+    margin-left: 1rem;
+    flex: 0 0 auto;
+}
+.flip-accordion[open] > summary::after { transform: rotate(-135deg); }
+.flip-accordion-body { padding: 0.25rem 0.25rem 1.75rem 0.25rem; text-align: left; }
+.flip-accordion-body .flip-bio {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 0 0 1.25rem 0;
+    max-width: none;
+    text-wrap: pretty;
+}
+.flip-accordion-body .flip-bio:last-child { margin-bottom: 0; }
+
+/* For Media */
+.flip-media {
+    max-width: 560px;
+    margin: 3.5rem auto 0 auto;
+}
+.flip-media-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--flip-red);
+    margin: 0 0 0.6rem 0;
+}
+.flip-media-text {
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    color: #666;
+    margin: 0 0 1.25rem 0;
+    text-wrap: pretty;
+}
+.flip-media-links a {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--flip-ink);
+    text-decoration: none;
+    border: 1px solid rgba(0, 38, 89, 0.35);
+    padding: 0.65rem 1.35rem;
+    border-radius: 2px;
+    margin: 0.3rem;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+.flip-media-links a:hover, .flip-media-links a:focus { background: var(--flip-ink); color: #fff; }
+
+/* Follow signup */
+.flip-signup {
+    max-width: 560px;
+    margin: 4rem auto 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 2.5rem;
+}
+.flip-signup-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: #555;
+    margin: 0.5rem auto 0 auto;
+    max-width: 460px;
+    text-wrap: pretty;
+}
+.flip-signup-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1.5rem 0 0 0;
+    max-width: 520px;
+}
+.flip-signup-form input[type="email"],
+.flip-signup-form input[type="text"] {
+    flex: 1 1 200px;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    border-radius: 2px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--flip-dark);
+    background: #fff;
+}
+.flip-signup-form input::placeholder { color: #8a8a8a; }
+.flip-signup-form button {
+    padding: 0.85rem 1.75rem;
+    background: var(--flip-red);
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.25s ease;
+    flex: 0 0 auto;
+}
+.flip-signup-form button:hover { background: var(--flip-red-hover); }
+
+/* Sticky contact footer */
+.flip-footer-bar {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 900;
+    background: var(--flip-red);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 -2px 14px rgba(0, 0, 0, 0.18);
+}
+.flip-footer-bar a { color: #fff; text-decoration: none; transition: opacity 0.2s ease; }
+.flip-footer-bar a:hover { opacity: 0.65; }
+
+/* Two-column hero (gallery wall-label) */
+.flip-hero {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    text-align: left;
+    margin: 1rem 0 2.5rem 0;
+}
+.flip-hero-media { flex: 1 1 46%; min-width: 0; }
+.flip-hero-media .flip-hero-img { margin: 0; }
+.flip-hero-info { flex: 1 1 54%; min-width: 0; }
+.flip-hero-info .flip-eyebrow { margin-top: 0; }
+.flip-hero-info .flip-meta { margin-bottom: 0; }
+.flip-hero-desc {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    margin: 1.25rem 0 0 0;
+    text-wrap: pretty;
+}
+.flip-hero-details {
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.flip-hero-details > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.flip-hero-details .k {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #777;
+    flex: 0 0 auto;
+}
+.flip-hero-details .v {
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    color: var(--flip-dark);
+    text-align: right;
+    text-wrap: balance;
+}
+@media (max-width: 720px) {
+    .flip-hero { flex-direction: column; text-align: center; gap: 1.5rem; }
+    .flip-hero-info .flip-meta { margin-bottom: 0; }
+}
+
+@media (max-width: 600px) {
+    .flip-title { font-size: 2.1rem; }
+    .flip-story { font-size: 1.02rem; }
+    .flip-line { font-size: 1.08rem; }
+    .flip-section-title { font-size: 1.4rem; }
+    .flip-details { gap: 1.2rem 1.75rem; }
+    .flip-cta { padding: 0.95rem 2rem; letter-spacing: 0.12em; }
+    .flip-footer-bar { gap: 1.1rem; font-size: 0.72rem; letter-spacing: 0.05em; }
+}
+
+/* ============ TABS ============ */
+.flip-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    background: rgba(255,255,255,0.96);
+    -webkit-backdrop-filter: saturate(180%) blur(6px);
+    backdrop-filter: saturate(180%) blur(6px);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    padding: 0 0.75rem;
+}
+.flip-tab {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #6a6a6a;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    padding: 0.95rem 1.1rem 0.8rem 1.1rem;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+.flip-tab:hover { color: var(--flip-dark, #111); }
+.flip-tab.active { color: var(--flip-red, #b80000); border-bottom-color: var(--flip-red, #b80000); }
+.flip-tabpanel[hidden] { display: none; }
+.section-header { display: block; height: 0; margin: 0; scroll-margin-top: 68px; }
+
+/* ============ VICTORY: piano cards ============ */
+.flip-piano {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 2.75rem 0;
+    border-top: 1px solid rgba(0,0,0,0.10);
+}
+.flip-piano:first-of-type { border-top: 0; padding-top: 1rem; }
+.flip-piano-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.35rem auto;
+    box-shadow: 0 0.375rem 1.5rem rgba(0,0,0,0.14);
+}
+.flip-piano-name {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--flip-dark, #111);
+    margin: 0 0 0.45rem 0;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+.flip-piano-spec {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #888;
+    margin: 0 0 0.9rem 0;
+    line-height: 1.7;
+}
+.flip-piano-lead {
+    font-size: 1.06rem;
+    line-height: 1.7;
+    color: #333;
+    margin: 0 auto;
+    max-width: 540px;
+    text-wrap: pretty;
+}
+.flip-piano-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.75rem;
+    margin: 1.4rem auto 0.25rem auto;
+    max-width: 540px;
+}
+.flip-piano-stats div { text-align: center; }
+.flip-piano-stats .n { font-size: 1.35rem; font-weight: 700; color: var(--flip-red, #b80000); line-height: 1.1; }
+.flip-piano-stats .l {
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: #888; margin-top: 0.2rem;
+}
+
+/* ============ VICTORY: compact More accordion ============ */
+.flip-more { max-width: 540px; margin: 0.35rem auto 0 auto; }
+.flip-more > summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--flip-red, #b80000);
+    padding: 0.65rem 0;
+}
+.flip-more > summary::-webkit-details-marker { display: none; }
+.flip-more > summary::after {
+    content: "";
+    width: 0.4rem; height: 0.4rem;
+    border-right: 2px solid var(--flip-red, #b80000);
+    border-bottom: 2px solid var(--flip-red, #b80000);
+    transform: rotate(45deg);
+    transition: transform 0.25s ease;
+}
+.flip-more[open] > summary::after { transform: rotate(-135deg); }
+.flip-more[open] > summary .flip-more-open { display: none; }
+.flip-more > summary .flip-more-close { display: none; }
+.flip-more[open] > summary .flip-more-close { display: inline; }
+.flip-more-body { text-align: left; padding-bottom: 0.35rem; }
+.flip-more-body .flip-story {
+    text-align: left;
+    font-size: 1.0rem;
+    line-height: 1.78;
+    max-width: none;
+    margin: 0 0 1rem 0;
+}
+.flip-more-body .flip-story:last-child { margin-bottom: 0; }
+
+@media (max-width: 600px) {
+    .flip-tab { padding: 0.85rem 0.7rem 0.7rem 0.7rem; letter-spacing: 0.1em; }
+    .flip-piano-name { font-size: 1.28rem; }
+}
+
+/* ============ LEFT-ALIGNED, EQUAL-MARGIN COLUMN ============ */
+html, body { background: #ffffff; }
+.flip-tabpanel { background: #ffffff; }
+.flip-page {
+    text-align: left;
+    max-width: 1040px;
+    background: #ffffff;
+    padding-left: clamp(1.5rem, 5vw, 3.5rem);
+    padding-right: clamp(1.5rem, 5vw, 3.5rem);
+    padding-bottom: 16rem;
+}
+/* larger, easier-to-read body copy for the wider measure */
+.flip-page .flip-story,
+.flip-page .flip-bio,
+.flip-page .flip-piano-lead,
+.flip-page .flip-more-body .flip-story { font-size: 1.2rem; line-height: 1.8; }
+.flip-page .flip-section-title { font-size: 1.95rem; }
+.flip-page .flip-title { font-size: 3.1rem; }
+
+/* ============ DEEP-RED ACCENTS, SOLID FOOTER, PROMINENT TABS ============ */
+/* Bright red (#b80000) stays for TEXT so it pops. Solid fills go deeper. */
+
+.flip-page .flip-cta { background: #820000; }
+.flip-page .flip-cta:hover,
+.flip-page .flip-cta:focus { background: #6b0000; color: #fff; }
+.flip-page .flip-cta:active { background: #560000; }
+.flip-page .flip-signup-form button { background: #820000; }
+.flip-page .flip-signup-form button:hover { background: #6b0000; }
+.flip-page .flip-offer { border-top-color: rgba(130, 0, 0, 0.30); }
+
+/* Sticky footer: deep gray-blue in the tone of the flag */
+.flip-footer-bar { background: #2c3a52; }
+
+/* Prominent, colored tab bar */
+.flip-tabs {
+    background: #820000;
+    border-bottom: none;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.18);
+    padding: 0 0.5rem;
+    gap: 0;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+.flip-tab {
+    color: #ffffff;
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    padding: 1.1rem 1.6rem 0.95rem 1.6rem;
+    border-bottom: 3px solid transparent;
+}
+.flip-tab:hover { color: #ffffff; border-bottom-color: rgba(255,255,255,0.4); }
+.flip-tab.active { color: #ffffff; border-bottom-color: #ffffff; }
+.section-header { scroll-margin-top: 76px; }
+
+@media (max-width: 600px) {
+    .flip-tab { font-size: 0.78rem; letter-spacing: 0.12em; padding: 1rem 1.05rem 0.85rem 1.05rem; }
+}
+.flip-page .flip-eyebrow,
+.flip-page .flip-title,
+.flip-page .flip-meta,
+.flip-page .flip-section-eyebrow,
+.flip-page .flip-section-title,
+.flip-page .flip-story,
+.flip-page .flip-line,
+.flip-page .flip-bio,
+.flip-page .flip-bio-subtitle,
+.flip-page .flip-caption,
+.flip-page .flip-framed-caption,
+.flip-page .flip-video-label,
+.flip-page .flip-details,
+.flip-page .flip-timeline,
+.flip-page .flip-media,
+.flip-page .flip-media-text,
+.flip-page .flip-signup,
+.flip-page .flip-signup-text,
+.flip-page .flip-accordion,
+.flip-page .flip-offer,
+.flip-page .flip-price,
+.flip-page .flip-avail,
+.flip-page .flip-piano,
+.flip-page .flip-piano-name,
+.flip-page .flip-piano-spec,
+.flip-page .flip-piano-lead,
+.flip-page .flip-piano-stats,
+.flip-page .flip-more {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+/* media spans the full column, flush to both margins */
+.flip-page .flip-hero-img,
+.flip-page .flip-orientation,
+.flip-page .flip-framed,
+.flip-page .flip-bio-img,
+.flip-page .flip-piano-img,
+.flip-page .flip-video {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.flip-page .flip-details { justify-content: flex-start; }
+.flip-page .flip-hero-desc { text-align: left; }
+.flip-page .flip-piano-stats { justify-content: flex-start; }
+</style>
+</head>
+<body>
+
+<!-- ============ TAB BAR ============ -->
+<div class="flip-tabs" role="tablist" aria-label="Sections">
+    <button class="flip-tab active" data-tab="flip" role="tab" aria-selected="true" aria-controls="panel-flip">The Flip</button>
+    <button class="flip-tab" data-tab="victory" role="tab" aria-selected="false" aria-controls="panel-victory">Victory Verticals</button>
+</div>
+
+
+<div class="flip-tabpanel" id="panel-flip" role="tabpanel">
+<span class="section-header" aria-hidden="true"></span>
+<section class="flip-page">
+
+    <!-- ============ THE FLIP (two-column hero) ============ -->
+    <div class="flip-hero">
+        <div class="flip-hero-media">
+            <img class="flip-hero-img"
+                 src="the-flip-painting-jordan-cook-artboard.jpg"
+                 alt="The Flip, a flag painting by Jordan A. Cook made with ash and charcoal">
+        </div>
+        <div class="flip-hero-info">
+            <p class="flip-eyebrow">The First Painting of the American Heritage Project</p>
+            <h1 class="flip-title">The Flip</h1>
+            <div class="flip-meta">250th&nbsp;Anniversary&nbsp;Edition &bull; 1776-2026</div>
+            <p class="flip-hero-desc">A flag painted with ash and charcoal Jordan made from the fire that burned her gallery on the Fourth of July. One side bright, one side faded; a study of resilience and erasure, made to hang in any orientation.</p>
+            <div class="flip-hero-details">
+                <div><span class="k">Medium</span><span class="v">Watercolor, Gouache,&nbsp;Charcoal</span></div>
+                <div><span class="k">Artist</span><span class="v">Jordan A. Cook, Age&nbsp;25</span></div>
+                <div><span class="k">Unveiled</span><span class="v">September&nbsp;11,&nbsp;2025</span></div>
+                <div><span class="k">Released</span><span class="v">July&nbsp;4,&nbsp;2026</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ THE PAINTING ============ -->
+    <p class="flip-section-eyebrow">The Painting</p>
+    <h2 class="flip-section-title">A flag that changes with the eye that holds&nbsp;it</h2>
+
+    <p class="flip-story">The Flip captures the present dichotomy of viewpoints in our country, and it is profoundly personal. In its darker shadows, Jordan used paint she made herself from ash and charcoal collected from an arson fire that burned her gallery years ago on the Fourth of July. A bright American flag on one side and faded on the other, it speaks to both resilience and erasure.</p>
+
+    <p class="flip-story">Is the nation in descent, or in rebirth? At half-mast in mourning, tumbling through free fall, or flying at full force? The answers lie in the eyes of the viewer.</p>
+
+    <p class="flip-story">This painting can be viewed in any orientation. Turn it upside down, right side up, or to either side; each angle reframes the story. Inverted, the flag cries of distress. Upright, it ascends into the clouds. Tilt it, and the background shifts: smoke, fog, waves, or sky. Depending on the position, the stripes either bleed from red into black and white, thinning almost to disappearance, or move boldly from black and white into full, vibrant color. The back of the piece carries hanging hooks at both the top and the bottom, so it can be flipped and rehung in any orientation with ease.</p>
+
+    <img class="flip-orientation"
+         src="https://www.michelleandjordancook.com/wp-content/uploads/2025/10/TheFlip_JordanACook_upright_inverted_orientation.jpg"
+         alt="The Flip shown upright and inverted"
+         loading="lazy">
+    <p class="flip-caption">Upright and inverted &bull; ascent and&nbsp;distress</p>
+
+    <!-- ============ THE AMERICAN HERITAGE PROJECT ============ -->
+    <p class="flip-section-eyebrow">The American Heritage Project</p>
+    <h2 class="flip-section-title">The American Story</h2>
+
+    <p class="flip-story">The Flip is the first of the American Heritage paintings, a growing body of work commemorating the 250th anniversary of America: the events that marked the nation, the people who carried it, the machines that served it, and the land it stands on.</p>
+
+    <p class="flip-story">Many of these paintings reach back through our own connections: our Cherokee-Creek great-grandmother, who wrote poetry and songs; our friend Fred Oldfield, who came here by wagon train and showed us in his paintings; our grandfather, who laid tracks on the railroad at age fifteen; and the mechanics in Ely, Nevada, who kept the railcars alive. They honor the war hero who freed our family from Theresienstadt; Theodora, who risked her life hiding Jews, Allied pilots, and Italian prisoners in 1940s Netherlands; and the Victory Vertical pianos they owned.</p>
+
+    <p class="flip-story">But the paintings are only part of the picture. Each is made from the matter it depicts, with pigments of rock, clay, metal, and ash foraged from the places and people the work honors. Those materials transform the paintings into living archives, visually carrying each&nbsp;story.</p>
+
+    <div class="flip-video">
+        <iframe src="https://www.youtube.com/embed/ivhmxms1U40?rel=0"
+                title="Film: Jordan painting The Flip" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    <p class="flip-video-label">Film &bull; Jordan painting The&nbsp;Flip</p>
+
+    <div class="flip-video">
+        <iframe src="https://www.youtube.com/embed/jDWIZ-J243k?rel=0"
+                title="News: the gallery fire" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    <p class="flip-video-label">News &bull; The gallery&nbsp;fire</p>
+
+    <!-- ============ LIVING GROUND ============ -->
+    <p class="flip-section-eyebrow">The Material</p>
+    <h2 class="flip-section-title">Living Ground</h2>
+
+    <p class="flip-line">History rendered in its own matter.</p>
+
+    <p class="flip-story">In The Flip, that ground is ash and charcoal Jordan made from the fire that took the gallery. The painting holds the very thing it survived.</p>
+
+    <!-- ============ THE EDITION + ASK ============ -->
+    <div class="flip-offer">
+        <p class="flip-section-eyebrow" style="margin-top:0;">Acquire</p>
+        <h2 class="flip-section-title">The Edition of 250</h2>
+
+        <p class="flip-story">Hand-finished archival gicl&eacute;es, each painted by hand so no two are alike, and numbered in a closed edition of 250. Each arrives framed and ready to hang, with a signed, numbered certificate and a video of Jordan painting that specific piece. The frame carries hangers on both ends, so The Flip can hang upright or inverted, just as the painting is meant to be shown. Museum-quality anti-reflective glass is available on request.</p>
+
+        <!-- FRAMED PHOTO -->
+        <img class="flip-framed"
+             src="https://cdn.michelleandjordancook.com/wp-content/uploads/2026/06/30205631/the-flip-framed-copyright-jordan-a-cook.jpg"
+             alt="The Flip by Jordan A. Cook, shown framed in the recommended presentation"
+             width="1000" height="1250"
+             loading="lazy">
+        <p class="flip-framed-caption">Each piece arrives framed and ready to hang, as&nbsp;shown.</p>
+
+        <p class="flip-price">$1,850</p>
+        <p class="flip-avail">Ships framed &bull; Shipping billed&nbsp;separately</p>
+
+        <a class="flip-cta" href="https://buy.stripe.com/8x24gAc5P9EP5VJgUCabK02" target="_blank" rel="noopener">Acquire The Flip</a>
+    </div>
+
+    <!-- ============ ABOUT THE ARTIST (accordion) ============ -->
+    <details class="flip-accordion">
+        <summary>About the Artist, Jordan A. Cook</summary>
+        <div class="flip-accordion-body">
+            <p class="flip-bio">Jordan A. Cook is a piano rebuilder, pianist, and watercolor artist whose work is rooted in the belief that beauty and meaning often emerge from what has been broken. She specializes in the restoration of WWII-era Steinway Victory Verticals, the compact pianos air-dropped by B-17 bombers into active war zones to boost troop morale, and is regarded as the foremost expert on the instrument.</p>
+            <p class="flip-bio">Jordan sees these rare instruments as living archives, each carrying a story that deserves to be told to preserve and perpetuate its legacy. One such restoration was Colonel George Boucher's Victory Vertical, a piano he had begun repairing but never finished. In a collaboration across time, Jordan completed his unfinished work, honoring both the man and the music he left behind.</p>
+            <p class="flip-bio">Jordan's journey into restoration began during a period of profound hearing loss, when she encountered a fire and water damaged 1925 Steinway L needing to regain its voice. Pressing a soot-covered key, she felt the piano's silent story, and her calling. That piano, named Arukah (Hebrew for restored to a better, though different, condition), became the namesake of her business, Arukah Piano.</p>
+            <p class="flip-bio">In addition to restoration work, Jordan composes music and is an internationally exhibited artist working in gouache, watercolor, and mixed media made from her own foraged pigments, paint, and ink. Her paintings have been shown in historical and contemporary galleries around the world, including the Children's Holocaust Museum at Terezin, the Matterhorn in Switzerland, and at Maidan Nezalezhnosti in Kyiv, Ukraine.</p>
+            <p class="flip-bio">Whether restoring a war-torn piano or painting with pigments made from earth and ash, Jordan engages in a quiet dialogue with time, creating works that bridge generations.</p>
+        </div>
+    </details>
+
+    <!-- ============ FOR MEDIA ============ -->
+    <div class="flip-media">
+        <p class="flip-media-label">For Media</p>
+        <p class="flip-media-text">Journalists and press may download Jordan's biography and artist statement.</p>
+        <p class="flip-media-links">
+            <a href="Jordan-A-Cook-Biography.pdf" target="_blank" rel="noopener">Biography (PDF)</a>
+            <a href="Jordan-A-Cook-Artist-Statement.pdf" target="_blank" rel="noopener">Artist Statement (PDF)</a>
+        </p>
+    </div>
+
+    <!-- ============ FOLLOW ============ -->
+    <div class="flip-signup">
+        <p class="flip-section-eyebrow" style="margin-top:0;">Follow Our Work</p>
+        <h2 class="flip-section-title">Be first to hear</h2>
+        <p class="flip-signup-text">New restorations, paintings, and updates. We send them a few times a year.</p>
+
+        <!-- AWeber signup (list awlist6830269), restyled to match the page -->
+        <form class="flip-signup-form" method="post" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl">
+            <div style="display:none;">
+                <input type="hidden" name="meta_web_form_id" value="985662255" />
+                <input type="hidden" name="meta_split_id" value="" />
+                <input type="hidden" name="listname" value="awlist6830269" />
+                <input type="hidden" name="redirect" value="https://www.michelleandjordancook.com/welcome" />
+                <input type="hidden" name="meta_redirect_onlist" value="https://www.michelleandjordancook.com/already-subscribed" />
+                <input type="hidden" name="meta_adtracking" value="My_Web_Form_4" />
+                <input type="hidden" name="meta_message" value="1" />
+                <input type="hidden" name="meta_required" value="name,email" />
+                <input type="hidden" name="meta_tooltip" value="name||name,,email||email address" />
+            </div>
+            <input type="text" name="name" aria-label="Name" placeholder="Name" required />
+            <input type="email" name="email" aria-label="Email address" placeholder="Email address" required />
+            <button type="submit">Stay in Touch</button>
+            <img src="https://forms.aweber.com/form/displays.htm?id=nBysbGxMTKys" alt="" style="display:none;" />
+        </form>
+    </div>
+
+</section>
+</div><!-- /panel-flip -->
+
+<!-- ============ VICTORY VERTICALS PANEL ============ -->
+<div class="flip-tabpanel" id="panel-victory" role="tabpanel" hidden>
+<span class="section-header" aria-hidden="true"></span>
+<section class="flip-page">
+
+    <p class="flip-eyebrow">Arukah Piano &bull; Jordan A. Cook</p>
+    <h1 class="flip-title" style="font-size:2.2rem;">The Victory Verticals</h1>
+    <div class="flip-meta">The pianos that went to war</div>
+
+    <img class="flip-orientation"
+         src="https://www.michelleandjordancook.com/wp-content/uploads/2025/02/jordan-a-cook-steinway-victory-vertical-vbar-shaping-arukah.jpg"
+         alt="Jordan A. Cook shaping the V bar of a Steinway Victory Vertical"
+         loading="lazy">
+    <p class="flip-caption">Shaping the V bar of a Steinway Victory&nbsp;Vertical</p>
+
+    <p class="flip-story">The Steinway Victory Vertical was compact, rugged, and finished in the color of the service it shipped to: olive drab for the Army, blue-gray for the Navy, teal-blue for the Marines, and blue for the Air Force. The Victories were carried aboard B-17 bombers into active war zones to lift the morale of American&nbsp;troops.</p>
+
+    <p class="flip-story">Jordan A. Cook rebuilds them. Over more than a decade she has restored and maintained these instruments with tooling and original-pattern parts specific to them, treating each as a historical artifact and preserving the wartime markings that make it a record of its moment. She is regarded as the foremost expert on the&nbsp;instrument.</p>
+
+    <!-- ============ MEET THE TROOPS ============ -->
+    <p class="flip-section-eyebrow">The Collection</p>
+    <h2 class="flip-section-title">Meet the troops</h2>
+    <p class="flip-story">Each piano opens a different window on the war: the Pacific and New Guinea, Normandy and Korea, the Dutch resistance, the southern home front, and a story of survival. Open any one to read its&nbsp;history.</p>
+
+    <!-- MacArthur -->
+    <div class="flip-piano">
+        <img class="flip-piano-img"
+             src="https://jordan-a-cook-landing-qw7tz.kinsta.page/General-MacArthur-Victory.jpg"
+             alt="General Douglas MacArthur's Regency Victory Vertical piano" loading="lazy">
+        <h3 class="flip-piano-name">General MacArthur</h3>
+        <p class="flip-piano-spec">Regency Victory Vertical &bull; January 26, 1943 &bull; Olive Drab &bull; Serial 314476 &bull; Case U4436</p>
+        <p class="flip-piano-lead">Pacific Theater, New Guinea. Made in the Steinway factory on the General's sixty-third&nbsp;birthday.</p>
+        <details class="flip-more">
+            <summary><span class="flip-more-open">Read the history</span><span class="flip-more-close">Close</span></summary>
+            <div class="flip-more-body">
+                <p class="flip-story">Listed in Steinway's archives as a Regency Victory Vertical, the prototype model that preceded the standard run, this piano was completed on January 26, 1943, General Douglas MacArthur's sixty-third birthday, in the week the Casablanca decisions committed the Allies to accepting only the unconditional surrender of the Axis. It was stationed at Hollandia in the Pacific Theater, in the officers' quarters known as "the mansion," during MacArthur's command.</p>
+                <p class="flip-story">MacArthur's son, Arthur MacArthur IV, a child prodigy who would go on to become a concert pianist, played this instrument as a boy. When the troops moved on, a woman was permitted to keep the piano. It made its way to a bistro in France, then to the workshop of Andrew Giller, a renowned piano rebuilder in the United Kingdom, before crossing the Atlantic by cargo container to its current home in Washington State. Its provenance is documented through original photographs, newspaper articles, and Steinway's own records.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Boucher -->
+    <div class="flip-piano">
+        <img class="flip-piano-img"
+             src="https://jordan-a-cook-landing-qw7tz.kinsta.page/Colonel-Boucher-Victory.jpg"
+             alt="Colonel George Boucher's Victory Vertical piano, rebuilt by Jordan A. Cook" loading="lazy">
+        <h3 class="flip-piano-name">Colonel George Boucher</h3>
+        <p class="flip-piano-spec">Victory Vertical &bull; August 24, 1949 &bull; Army Drab &bull; Serial 329236 &bull; Case E1481</p>
+        <p class="flip-piano-lead">Normandy and Korea. Brought home from the front and stripped of its olive drab to never see war&nbsp;again.</p>
+        <div class="flip-piano-stats">
+            <div><div class="n">14</div><div class="l">Medals &amp; Awards</div></div>
+            <div><div class="n">94.4%</div><div class="l">Combat Engagement</div></div>
+            <div><div class="n">103</div><div class="l">Years Lived</div></div>
+        </div>
+        <details class="flip-more">
+            <summary><span class="flip-more-open">Read the history</span><span class="flip-more-close">Close</span></summary>
+            <div class="flip-more-body">
+                <p class="flip-story">Among Jordan's most poignant restorations is the Victory Vertical once owned by Colonel George H. Boucher, a decorated war hero who served in both World War II and the Korean War. Colonel Boucher was part of the D-Day invasion in Europe and helped clear out Nazi work and death camps.</p>
+                <p class="flip-story">He was awarded fourteen medals and commendations, several Presidential citations, and held the distinction of having engaged the enemy in combat 94.4% of the time on the front line. Both of his hands were wounded by shrapnel; he refused medical assistance and declined a Purple Heart, feeling he deserved no special recognition for doing his job. He also served as chaplain, conducting worship and prayer on the front lines.</p>
+                <p class="flip-story">Colonel Boucher brought this Victory Vertical home from Normandy and stripped the olive drab paint from it as a statement that it would never see war again, an act known as decommissioning. Jordan acquired the piano from Florida and brought it home to Washington for rebuilding. Over the following months, she uncovered traces of the Colonel's own handiwork: innovative repairs and design modifications he had begun and never finished. In a collaboration across time, she completed his unfinished work to honor the man and his piano, and kept the wood bare, exactly as he left it. Her restoration is a playable, living archive she still calls "his" piano, one she has the privilege of stewarding.</p>
+                <p class="flip-story">Years after completing the restoration, Jordan learned that members of her own family had been imprisoned in concentration camps during the war that Colonel Boucher had helped liberate. The revelation was unexpected and deeply moving. Colonel Boucher passed away in 2018 at the age of 103.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Theodora -->
+    <div class="flip-piano">
+        <img class="flip-piano-img"
+             src="https://jordan-a-cook-landing-qw7tz.kinsta.page/Theodora-Victory.jpg"
+             alt="Theodora Van Doorninck's Victory Vertical piano" loading="lazy">
+        <h3 class="flip-piano-name">Theodora "Dodie" Van Doorninck</h3>
+        <p class="flip-piano-spec">Victory Vertical &bull; 1944 &bull; Serial 315638</p>
+        <p class="flip-piano-lead">The Dutch resistance. Recognized by General Eisenhower and Yad&nbsp;Vashem.</p>
+        <details class="flip-more">
+            <summary><span class="flip-more-open">Read the history</span><span class="flip-more-close">Close</span></summary>
+            <div class="flip-more-body">
+                <p class="flip-story">Theodora is named for Theodora Van Doorninck Cole, whose family was part of the Dutch resistance during World War II. They sheltered downed Allied pilots, hid Jewish families, and protected Italian prisoners of war, at extraordinary personal risk.</p>
+                <p class="flip-story">Their bravery was formally recognized by General Eisenhower and by Yad Vashem, Israel's Holocaust remembrance authority. This is her piano, carried forward by the same hands that rebuilt Colonel Boucher's, a tribute to a family who chose courage when it cost them everything to do so. Its full provenance is still being assembled.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Bishop -->
+    <div class="flip-piano">
+        <img class="flip-piano-img"
+             src="https://jordan-a-cook-landing-qw7tz.kinsta.page/Bishop-Victory.jpg"
+             alt="The Bishop Victory Vertical piano" loading="lazy">
+        <h3 class="flip-piano-name">Bishop</h3>
+        <p class="flip-piano-spec">Victory Vertical &bull; November 3, 1948 &bull; Army Drab &bull; Serial 327088 &bull; Case D2162</p>
+        <p class="flip-piano-lead">The southern home front. A North Carolina congregation, then a church basement for&nbsp;decades.</p>
+        <details class="flip-more">
+            <summary><span class="flip-more-open">Read the history</span><span class="flip-more-close">Close</span></summary>
+            <div class="flip-more-body">
+                <p class="flip-story">Bishop carried music to a North Carolina congregation through the war years, the heartbeat of a Black church and the gatherings it held. When the war ended, the piano fell silent. It rested in a church basement for decades, unseen and nearly forgotten, until it surfaced again for this restoration.</p>
+                <p class="flip-story">It is dated November 3, 1948, the morning the nation woke to the infamous and mistaken headline, "Dewey Defeats Truman."</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Charley Helene Milton -->
+    <div class="flip-piano">
+        <img class="flip-piano-img"
+             src="https://jordan-a-cook-landing-qw7tz.kinsta.page/Charley-Helene-Milton-Victory.jpg"
+             alt="The Charley Helene Milton Victory Vertical piano" loading="lazy">
+        <h3 class="flip-piano-name">Charley Helene Milton</h3>
+        <p class="flip-piano-spec">Victory Vertical &bull; December 7, 1945 &bull; Army Drab &bull; Serial 318438 &bull; Case A2371</p>
+        <p class="flip-piano-lead">A story of survival. Three Gulf Coast hurricanes weathered at&nbsp;Sarasota.</p>
+        <details class="flip-more">
+            <summary><span class="flip-more-open">Read the history</span><span class="flip-more-close">Close</span></summary>
+            <div class="flip-more-body">
+                <p class="flip-story">Charley Helene Milton is named for the three storms it outlived: Hurricane Charley in 2004, then Helene and Milton in the autumn of 2024, all along the same Florida coast at Sarasota. Milton came ashore at Siesta Key on October 9, the first storm to make landfall in Sarasota County since 1944. As its eye crossed overhead, the owner watched on a webcam while trees and debris flew through the yard; inside that ring the house stood completely still and untouched. The piano came through whole.</p>
+                <p class="flip-story">It was completed on December 7, 1945, the fourth anniversary of Pearl Harbor and the first observed in peacetime, built in a season that understood survival.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- Liberto -->
+    <div class="flip-piano">
+        <img class="flip-piano-img"
+             src="https://jordan-a-cook-landing-qw7tz.kinsta.page/Liberto-Victory.jpg"
+             alt="The Liberto Victory Vertical piano" loading="lazy">
+        <h3 class="flip-piano-name">Liberto</h3>
+        <p class="flip-piano-spec">Victory Vertical &bull; November 24, 1948 &bull; Olive Drab &bull; Serial 327333 &bull; Case D2170</p>
+        <p class="flip-piano-lead">Shipped out of New York, returning to a New York artist loft once restored. Its full story is coming&nbsp;soon.</p>
+    </div>
+
+    <!-- ============ IN THE WORKSHOP ============ -->
+    <p class="flip-section-eyebrow">In the Workshop</p>
+    <h2 class="flip-section-title">Rebuilding a Victory Vertical</h2>
+
+    <div class="flip-video">
+        <iframe src="https://www.youtube.com/embed/Ffe_DG3K8zw?rel=0"
+                title="Film: At work on a Victory Vertical" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    <p class="flip-video-label">Film &bull; At work on a Victory&nbsp;Vertical</p>
+
+    <img class="flip-orientation"
+         src="https://www.michelleandjordancook.com/wp-content/uploads/2025/09/jordan-a-cook-col-boucher-victory-vertical-piano-arukah-scaled.jpg"
+         alt="Jordan A. Cook at work on Colonel Boucher's Victory Vertical" loading="lazy">
+    <p class="flip-caption">At work on Colonel Boucher's Victory&nbsp;Vertical</p>
+
+    <!-- ============ THE REBUILDER ============ -->
+    <p class="flip-section-eyebrow">The Rebuilder</p>
+    <h2 class="flip-section-title">A Victory Vertical belongs in a rebuilder's hands</h2>
+
+    <p class="flip-story">We document and restore the Victory pianos of World War II, then tell their stories through art and music. Each one preserves a piece of America's identity that might otherwise be&nbsp;forgotten.</p>
+
+    <img class="flip-orientation"
+         src="https://jordan-a-cook-landing-qw7tz.kinsta.page/Grandma-Peggy-USO.jpg"
+         alt="Peggy, Jordan's great-grandmother, playing a Victory Vertical at a USO during World War II" loading="lazy">
+    <p class="flip-caption">Peggy, Jordan's great-grandmother, playing a Victory Vertical at a USO during the&nbsp;war</p>
+
+    <p class="flip-story">There is no more fitting place to see one rebuilt than the Museum of Flight in Seattle, among the aircraft that once carried them. Jordan's work there brings the story full circle: an instrument designed to travel by air, returned to voice in the company of the machines that delivered it to the&nbsp;front.</p>
+
+    <img class="flip-orientation"
+         src="https://www.michelleandjordancook.com/wp-content/uploads/2025/10/2025-09-20_14-06-29-1.png"
+         alt="Jordan A. Cook at the Museum of Flight in Seattle, working on a Victory Vertical" loading="lazy">
+    <p class="flip-caption">At the Museum of Flight, Seattle, working on a Victory&nbsp;Vertical</p>
+
+    <!-- ============ ACQUIRE A VICTORY ============ -->
+    <div class="flip-offer">
+        <p class="flip-section-eyebrow" style="margin-top:0;">Acquire</p>
+        <h2 class="flip-section-title">Own a Victory Vertical</h2>
+
+        <p class="flip-story">A small number of restored Victory Verticals become available to collectors, museums, and institutions, each rebuilt by hand and carried forward with its documented history. Acquisitions are arranged personally. Tell us the instrument or the story that draws you, and Jordan will respond&nbsp;directly.</p>
+
+        <a class="flip-cta" href="mailto:us@michelleandjordancook.com?subject=Acquiring%20a%20Victory%20Vertical&amp;body=I%27m%20interested%20in%20acquiring%20a%20Victory%20Vertical.%20Please%20tell%20me%20what%20is%20available." target="_blank" rel="noopener">Inquire About a Victory</a>
+
+        <p class="flip-avail" style="margin-top:1.75rem;">Have a Victory question? Jordan answers personally and is available for phone&nbsp;consultation.</p>
+        <p class="flip-media-links">
+            <a href="mailto:us@michelleandjordancook.com?subject=Victory%20Question">Send Jordan a Message</a>
+        </p>
+    </div>
+
+</section>
+</div><!-- /panel-victory -->
+
+<!-- ============ STICKY CONTACT FOOTER ============ -->
+<div class="flip-footer-bar">
+    <a href="mailto:us@michelleandjordancook.com?subject=The%20Flip">Contact</a>
+    <a href="https://www.facebook.com/arukahpiano" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/arukahpiano" target="_blank" rel="noopener">Instagram</a>
+</div>
+
+
+<script>
+(function () {
+    var tabs = document.querySelectorAll('.flip-tab');
+    var panels = {
+        flip: document.getElementById('panel-flip'),
+        victory: document.getElementById('panel-victory')
+    };
+    function activate(name) {
+        tabs.forEach(function (t) {
+            var on = t.getAttribute('data-tab') === name;
+            t.classList.toggle('active', on);
+            t.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        Object.keys(panels).forEach(function (k) {
+            if (panels[k]) { panels[k].hidden = (k !== name); }
+        });
+        var active = panels[name];
+        if (active) {
+            var header = active.querySelector('.section-header');
+            if (header && header.scrollIntoView) { header.scrollIntoView(true); }
+        }
+    }
+    tabs.forEach(function (t) {
+        t.addEventListener('click', function () { activate(t.getAttribute('data-tab')); });
+    });
+})();
+</script>
+</body>
+</html>
