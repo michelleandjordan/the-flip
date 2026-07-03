@@ -375,7 +375,7 @@ body { font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; col
 }
 .flip-signup-form button:hover { background: var(--flip-red-hover); }
 
-/* Sticky contact footer */
+/* Sticky contact footer: pinned to the bottom, always visible */
 .flip-footer-bar {
     position: fixed;
     left: 0; right: 0; bottom: 0;
@@ -618,19 +618,8 @@ html, body { background: #ffffff; }
 .flip-page .flip-signup-form button:hover { background: #6b0000; }
 .flip-page .flip-offer { border-top-color: rgba(130, 0, 0, 0.30); }
 
-/* Sticky footer: deep gray-blue in the tone of the flag */
+/* Footer: deep gray-blue in the tone of the flag */
 .flip-footer-bar { background: #2c3a52; }
-/* Soft white fade directly above the footer so content eases in rather than touching it */
-.flip-footer-bar::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    height: 2.75rem;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
-    pointer-events: none;
-}
 
 /* Single sweep of light across just the Victory tab, once every 9s */
 .flip-tab[data-tab="victory"]:not(.active) {
