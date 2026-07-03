@@ -29,7 +29,6 @@ body { font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; col
     text-align: center;
     box-sizing: border-box;
 }
-    
 .flip-page * { box-sizing: border-box; }
 
 .flip-eyebrow {
@@ -179,10 +178,12 @@ body { font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; col
     margin: 0 0 2.5rem 0;
     text-wrap: balance;
 }
-/* Vertical (short-form) videos: portrait 9:16, narrower */
+/* Vertical (short-form) videos: portrait 9:16, height-capped so they stay compact */
 .flip-video-vertical {
-    max-width: 340px;
+    max-width: 300px;
+    max-height: 70vh;
     aspect-ratio: 9 / 16;
+    margin-left: 0;
 }
 
 /* Offer + Acquire */
@@ -620,25 +621,13 @@ html, body { background: #ffffff; }
 /* Sticky footer: deep gray-blue in the tone of the flag */
 .flip-footer-bar { background: #2c3a52; }
 
-/* Flag-wave shimmer: one steady sweep, then a long rest, repeating */
-@keyframes flip-tab-wave {
-    0%   { background-position: 250% 0; }
-    18%  { background-position: -150% 0; }
-    100% { background-position: -150% 0; }
+/* Gentle occasional glow on the Victory Verticals tab to draw the eye */
+@keyframes flip-tab-glow {
+    0%, 88%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+    94%           { box-shadow: 0 0 14px 3px rgba(255,255,255,0.75); }
 }
-.flip-tabs::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background: linear-gradient(
-        100deg,
-        rgba(255,255,255,0) 45%,
-        rgba(255,255,255,0.55) 50%,
-        rgba(255,255,255,0) 55%
-    );
-    background-size: 200% 100%;
-    animation: flip-tab-wave 14s linear infinite;
+.flip-tab[data-tab="victory"]:not(.active) {
+    animation: flip-tab-glow 9s ease-in-out infinite;
 }
 .flip-tabs {
     background: #820000;
@@ -735,10 +724,11 @@ html, body { background: #ffffff; }
     margin: 1.5rem 0 0.75rem 0;
 }
 .flip-handprint {
-    width: 110px;
+    width: 130px;
     height: auto;
-    flex-shrink: 0;
-    margin-top: 0.15rem;
+    float: left;
+    margin: 0.1rem 1.25rem 0.5rem 0;
+    shape-outside: circle(50%);
 }
 .flip-handprint-note {
     font-size: 0.8rem;
@@ -746,11 +736,10 @@ html, body { background: #ffffff; }
     color: #777;
     font-style: italic;
     margin: 0 0 1rem 0;
+    clear: left;
 }
 @media (max-width: 600px) {
-    .flip-pigments { flex-direction: column; gap: 0.75rem; align-items: center; }
-    .flip-handprint { width: 90px; }
-    .flip-pigments .flip-story { text-align: left; }
+    .flip-handprint { width: 100px; margin: 0.1rem 0.9rem 0.4rem 0; }
 }
 </style>
 </head>
@@ -838,10 +827,7 @@ html, body { background: #ffffff; }
 
     <p class="flip-story">In The Flip, Jordan used ash and charcoal from the fire that burned her gallery. The painting holds the very thing it survived.</p>
 
-    <div class="flip-pigments">
-        <img class="flip-handprint" src="jordans-handprint.png" alt="Jordan's childhood handprint, her maker's mark, indicating paint she made by hand">
-        <p class="flip-story" style="margin:0;">Jordan also used minerals gathered from many states across the country. Spectral hematite, a form of iron oxide, brings grays from Michigan. Malachite and azurite, from oxidized copper deposits, bring cooler tones from Arizona. Argillite, a fine-grained stone, brings the reds from Idaho and Montana. Lapis lazuli, a deep-blue metamorphic rock, brings the blue from California. Bloodstone, a chalcedony quartz, comes from Nevada and Texas. The blacks and deeper tones are peach charcoal from New York, grape charcoal from one-year-old grapevine stems in Washington, and carbonized cherry pit charcoal, also from&nbsp;Washington.</p>
-    </div>
+    <p class="flip-story"><img class="flip-handprint" src="jordans-handprint.png" alt="Jordan's childhood handprint, her maker's mark, indicating paint she made by hand">Jordan also used minerals gathered from many states across the country. Spectral hematite brings grays from Michigan. Malachite and azurite bring cooler tones from Arizona. Argillite brings reds from Idaho and Montana. Lapis lazuli lends blue from California. Bloodstone brings midtone gray from Nevada and Texas. Peach charcoal offers black from New York. Both grape charcoal from one-year-old vines and carbonized cherry pit charcoal come from Washington State. Charcoal from the gallery fire is juniper and&nbsp;fir.</p>
 
     <p class="flip-handprint-note">Jordan's handprint, made at age five, marks the paint she makes by&nbsp;hand.</p>
 
