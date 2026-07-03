@@ -178,10 +178,10 @@ body { font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif; col
     margin: 0 0 2.5rem 0;
     text-wrap: balance;
 }
-/* Vertical (short-form) videos: portrait 9:16, height-capped so they stay compact */
+/* Vertical (short-form) videos: portrait 9:16, tightly capped so they stay small */
 .flip-video-vertical {
-    max-width: 300px;
-    max-height: 70vh;
+    max-width: 230px;
+    max-height: 50vh;
     aspect-ratio: 9 / 16;
     margin-left: 0;
 }
@@ -621,13 +621,18 @@ html, body { background: #ffffff; }
 /* Sticky footer: deep gray-blue in the tone of the flag */
 .flip-footer-bar { background: #2c3a52; }
 
-/* Gentle occasional glow on the Victory Verticals tab to draw the eye */
-@keyframes flip-tab-glow {
-    0%, 88%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
-    94%           { box-shadow: 0 0 14px 3px rgba(255,255,255,0.75); }
+/* Piano-key press: the Victory tab dips like a played key, every few seconds */
+@keyframes flip-tab-keypress {
+    0%, 82%, 100% { transform: translateY(0); box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+    88%           { transform: translateY(3px); box-shadow: 0 3px 8px rgba(0,0,0,0.28); }
+    92%           { transform: translateY(3px); box-shadow: 0 3px 8px rgba(0,0,0,0.28); }
+    97%           { transform: translateY(0); box-shadow: 0 0 0 0 rgba(0,0,0,0); }
 }
 .flip-tab[data-tab="victory"]:not(.active) {
-    animation: flip-tab-glow 9s ease-in-out infinite;
+    animation: flip-tab-keypress 6s ease-in-out infinite;
+}
+.flip-tab[data-tab="victory"]:not(.active):hover {
+    animation: none;
 }
 .flip-tabs {
     background: #820000;
@@ -804,7 +809,7 @@ html, body { background: #ffffff; }
     <p class="flip-story">But the paintings are only part of the picture. Each is made from the matter it depicts, with pigments of rock, clay, metal, and ash foraged from the places and people the work honors. Those materials transform the paintings into living archives, visually carrying each&nbsp;story.</p>
 
     <div class="flip-video">
-        <iframe src="https://www.youtube.com/embed/ivhmxms1U40?rel=0"
+        <iframe src="https://www.youtube.com/embed/ivhmxms1U40?rel=0&modestbranding=1&playsinline=1"
                 title="Film: Jordan painting The Flip" loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -812,7 +817,7 @@ html, body { background: #ffffff; }
     <p class="flip-video-label">Film &bull; Jordan painting The&nbsp;Flip</p>
 
     <div class="flip-video">
-        <iframe src="https://www.youtube.com/embed/jDWIZ-J243k?rel=0"
+        <iframe src="https://www.youtube.com/embed/jDWIZ-J243k?rel=0&modestbranding=1&playsinline=1"
                 title="News: the gallery fire" loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -832,7 +837,7 @@ html, body { background: #ffffff; }
     <p class="flip-handprint-note">Jordan's handprint, made at age five, marks the paint she makes by&nbsp;hand.</p>
 
     <div class="flip-video flip-video-vertical">
-        <iframe src="https://www.youtube.com/embed/kBxb0a5ihIY?rel=0"
+        <iframe src="https://www.youtube.com/embed/kBxb0a5ihIY?rel=0&modestbranding=1&playsinline=1"
                 title="Jordan A. Cook describing her ideas for The Flip" loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -840,7 +845,7 @@ html, body { background: #ffffff; }
     <p class="flip-video-label">Film &bull; Jordan describes her ideas for The&nbsp;Flip</p>
 
     <div class="flip-video flip-video-vertical">
-        <iframe src="https://www.youtube.com/embed/IbhwTGsod-M?rel=0"
+        <iframe src="https://www.youtube.com/embed/IbhwTGsod-M?rel=0&modestbranding=1&playsinline=1"
                 title="Jordan A. Cook explaining how she intends to create smoke and ash effects in The Flip" loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -848,7 +853,7 @@ html, body { background: #ffffff; }
     <p class="flip-video-label">Film &bull; Jordan explains how she will create the smoke and ash&nbsp;effects</p>
 
     <div class="flip-video flip-video-vertical">
-        <iframe src="https://www.youtube.com/embed/dqsJVXQMFlQ?rel=0"
+        <iframe src="https://www.youtube.com/embed/dqsJVXQMFlQ?rel=0&modestbranding=1&playsinline=1"
                 title="Jordan A. Cook showing the specular hematite used in The Flip" loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
@@ -1010,7 +1015,7 @@ html, body { background: #ffffff; }
                 <p class="flip-caption" style="margin-top:0.5rem;">Detail work at the keys &bull; Arukah&nbsp;Piano</p>
 
                 <div class="flip-video flip-video-vertical">
-                    <iframe src="https://www.youtube.com/embed/nHbgct9HCJ4?rel=0"
+                    <iframe src="https://www.youtube.com/embed/nHbgct9HCJ4?rel=0&modestbranding=1&playsinline=1"
                             title="Jordan A. Cook evaluating how Colonel Boucher's Victory plays after much work" loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -1037,7 +1042,7 @@ html, body { background: #ffffff; }
                 <p class="flip-story">Their bravery was formally recognized by General Eisenhower and by Yad Vashem, Israel's Holocaust remembrance authority. This is her piano, carried forward by the same hands that rebuilt Colonel Boucher's, a tribute to a family who chose courage when it cost them everything to do so. Its full provenance is still being assembled.</p>
 
                 <div class="flip-video flip-video-vertical">
-                    <iframe src="https://www.youtube.com/embed/_RV4nba-WTU?rel=0"
+                    <iframe src="https://www.youtube.com/embed/_RV4nba-WTU?rel=0&modestbranding=1&playsinline=1"
                             title="Jordan A. Cook playing a few notes on Theodora while helping the stuck hammers return" loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -1064,7 +1069,7 @@ html, body { background: #ffffff; }
                 <p class="flip-story">It is dated November 3, 1948, the morning the nation woke to the infamous and mistaken headline, "Dewey Defeats Truman."</p>
 
                 <div class="flip-video">
-                    <iframe src="https://www.youtube.com/embed/G_oCAg1Z8ds?rel=0"
+                    <iframe src="https://www.youtube.com/embed/G_oCAg1Z8ds?rel=0&modestbranding=1&playsinline=1"
                             title="Jordan A. Cook playing Bishop before rebuilding, a baseline recording" loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -1072,7 +1077,7 @@ html, body { background: #ffffff; }
                 <p class="flip-video-label">Film &bull; Jordan plays Bishop before rebuilding, a baseline for the before-and-after&nbsp;comparison</p>
 
                 <div class="flip-video flip-video-vertical">
-                    <iframe src="https://www.youtube.com/embed/xk4AYPFH_fc?rel=0"
+                    <iframe src="https://www.youtube.com/embed/xk4AYPFH_fc?rel=0&modestbranding=1&playsinline=1"
                             title="Jordan A. Cook enjoying Bishop's squeak" loading="lazy"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -1150,7 +1155,7 @@ html, body { background: #ffffff; }
     <h2 class="flip-section-title">Preparing a Victory in Seattle</h2>
 
     <div class="flip-video">
-        <iframe src="https://www.youtube.com/embed/Ffe_DG3K8zw?rel=0"
+        <iframe src="https://www.youtube.com/embed/Ffe_DG3K8zw?rel=0&modestbranding=1&playsinline=1"
                 title="Jordan A. Cook preparing a Victory Vertical at the Seattle Museum of Flight" loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
