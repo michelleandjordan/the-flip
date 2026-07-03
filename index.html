@@ -620,6 +620,17 @@ html, body { background: #ffffff; }
 
 /* Sticky footer: deep gray-blue in the tone of the flag */
 .flip-footer-bar { background: #2c3a52; }
+/* Soft white fade directly above the footer so content eases in rather than touching it */
+.flip-footer-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 2.75rem;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
+    pointer-events: none;
+}
 
 /* Single sweep of light across just the Victory tab, once every 9s */
 .flip-tab[data-tab="victory"]:not(.active) {
