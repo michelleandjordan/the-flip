@@ -660,10 +660,14 @@ html, body { background: #ffffff; }
     gap: 0.75rem;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
-    position: sticky;
+    position: fixed;
     top: 0;
-    overflow: hidden;
+    left: 0;
+    right: 0;
+    z-index: 950;
 }
+/* Fixed bar is lifted out of flow, so offset the content by the bar's height */
+body { padding-top: 3.88rem; }
 .flip-tab {
     color: #ffffff;
     font-size: 0.9rem;
@@ -960,7 +964,7 @@ html, body { background: #ffffff; }
          src="jordan-cook-seattle-museum-of-flight-victory-vertical.jpg"
          alt="Jordan A. Cook working on a Steinway Victory Vertical at the Seattle Museum of Flight, historic aircraft suspended overhead"
          loading="lazy">
-    <p class="flip-caption">Jordan at work on a Victory Vertical at the Seattle Museum of Flight, beneath the aircraft that once carried&nbsp;them</p>
+    <p class="flip-caption">Jordan at work on Evie, Frank Haude's Victory Vertical, preparing the piano for an evening concert with Classical KING FM at the Seattle Museum of&nbsp;Flight.</p>
 
     <p class="flip-story">During World War II, the U.S. War Department contracted with Steinway &amp; Sons to make instruments of war: pianos compact enough to ship to the war front and rugged enough to survive once there. These pianos were called Victory Verticals. Each Victory was finished in the color of its intended military branch, packed in a crate, and shipped by B-17 bombers to active war zones, to the front lines and field hospitals, to chaplains conducting worship under fire, and to USO shows performed on makeshift&nbsp;stages.</p>
 
@@ -1237,4 +1241,3 @@ html, body { background: #ffffff; }
 </script>
 </body>
 </html>
-
