@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Almost there · The Flip</title>
+<meta name="description" content="One more step to follow the work of Jordan A. Cook.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     DESIGN TOKENS  ·  edit these to match the Flip site exactly.
+     These specific hex/font values are PLACEHOLDERS drawn from
+     your documented palette and type, pending the Flip's real CSS.
+     Everything below this block (layout, spacing, copy) is a
+     design decision and should not need to change.
+     ============================================================ */
+  :root {
+    --paper:   #f4f3ef;   /* page background: light warm stone, high contrast */
+    --ink:     #1a1917;   /* primary text: warm near-black */
+    --ash:     #6b6660;   /* secondary text */
+    --line:    #d9d5cc;   /* hairline rules */
+    --accent:  #9e2b25;   /* muted flag red (charcoal-tempered, not bright) */
+
+    --display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --body:    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono:    "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  main {
+    width: 100%;
+    max-width: 34rem;
+    text-align: center;
+    animation: rise 0.7s ease-out both;
+  }
+
+  .kicker {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1.4rem;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(2.4rem, 7vw, 3.4rem);
+    line-height: 1.08;
+    letter-spacing: 0.005em;
+    margin: 0 0 1.2rem;
+    text-wrap: balance;
+  }
+
+  .lede {
+    font-size: 1.08rem;
+    color: var(--ink);
+    margin: 0 auto 1.4rem;
+    max-width: 30rem;
+    text-wrap: pretty;
+  }
+
+  .note {
+    font-size: 0.98rem;
+    color: var(--ash);
+    margin: 0 auto;
+    max-width: 30rem;
+    text-wrap: pretty;
+  }
+
+  .rule {
+    width: 3rem;
+    height: 1px;
+    background: var(--line);
+    border: 0;
+    margin: 2.2rem auto;
+  }
+
+  .fineprint {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--ash);
+    margin: 0 auto;
+    max-width: 30rem;
+    text-wrap: pretty;
+  }
+
+  .mark {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink);
+    margin-top: 2.6rem;
+  }
+  .mark .sep { color: var(--line); font-style: normal; padding: 0 0.4rem; }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
+  a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    main { animation: none; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <p class="kicker">One more step</p>
+    <h1>Check your inbox</h1>
+    <p class="lede">We just sent a short note asking you to confirm your email. Open it, click the link inside, and you&rsquo;re on the list.</p>
+    <p class="note">We write only a few times a year, when there is something worth your time: a Victory finished, a new painting released, the book.</p>
+    <hr class="rule">
+    <p class="fineprint">If the note is not there in a minute, it may be in your promotions or spam folder. Adding us as a contact keeps it in view.</p>
+    <p class="mark">The Flip <span class="sep">&middot;</span> Jordan A. Cook</p>
+  </main>
+</body>
+</html>
